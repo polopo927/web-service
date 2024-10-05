@@ -1,0 +1,73 @@
+.insurance {
+  padding: 20px;
+}
+
+.container__insurance {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.insurance__header {
+  font-family: 'Roboto-regular', sans-serif;
+  font-size: 47px;
+  line-height: 60px;
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-content: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.insurance__header-info {
+  margin: 0 auto;
+}
+
+.insurance__table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-bottom: 40px;
+}
+
+
+.insurance__table th,
+.insurance__table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 20%;
+  word-break: break-all;
+}
+
+.insurance__table th {
+  background-color: #E0E9FF;
+  font-weight: bold;
+}
+
+.insurance__table th:nth-child(1) {
+  /*  ID */
+  width: 10%;
+}
+
+.insurance__table th:nth-child(2) {
+  /*  Name */
+  width: 30%;
+}
+
+.insurance__table th:nth-child(3) {
+  /*  LOBID */
+  width: 15%;
+}
+
+.insurance__table th:nth-child(4) {
+  /*  Risks [] */
+  width: 30%;
+}
+
+.insurance__table th:nth-child(5) {
+  /*  ManagerID */
+  width: 15%;
+}
