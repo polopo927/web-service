@@ -1,0 +1,93 @@
+
+.container__sidebar {
+  min-width: 450px;
+  height: calc(100vh - 55px);
+  background-color: #E0E9FF;
+}
+
+.sidebar__nav {
+  font-family: 'Roboto-regular', sans-serif;
+  font-size: 32px;
+  line-height: 45px;
+  font-weight: 400;
+}
+
+.sidebar__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 11px;
+  padding-left: 11px;
+}
+
+.sidebar__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  margin-top: 32px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 18px;
+  position: relative;
+  cursor: pointer;
+}
+
+.sidebar__item:hover,
+.active
+ {
+  background-color: #7CA3DE99;
+}
+
+.for-before-icon {
+  position: relative;
+  padding-left: 79px;
+  display: flex;
+  align-items: start;
+  width: 100%;
+}
+
+.for-before-icon::before {
+  position: absolute;
+  content: '';
+  width: 54px;
+  height: 55px;
+  top: -5px;
+  left: 5px;
+  background-repeat: no-repeat;
+}
+
+.sidebar__item-продукты:before {
+  background-image: url('../../../public/img/products.svg');
+}
+.sidebar__item-страховые-премии:before {
+  background-image: url('../../../public/img/insurance.svg');
+}
+.sidebar__item-договоры::before {
+  top: -8px;
+  left: 0;
+  width: 61px;
+  height: 60px;
+  background-image: url('../../../public/img/contracts.svg');
+}
+.sidebar__item-агенты:before {
+  background-image: url('../../../public/img/agents.svg');
+}
+.sidebar__item-контрагенты::before {
+  width: 65px;
+  height: 55px;
+  top: -3px;
+  left: 5px;
+  background-image: url('../../../public/img/partners.svg');
+}
+
+.for-after-plus {
+  position: absolute;
+  content: '';
+  background-image: url('../../../public/img/plus.svg');
+  width: 32px;
+  height: 32px;
+}
+
+.sidebar__item-plus {
+  margin-right: 5px;
+}
